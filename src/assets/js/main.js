@@ -96,18 +96,18 @@ function verificarMinhaResposta() {
 }
 function rightAnswer(){
   setTimeout(() => {
-    animationImg.setAttribute('src', '/src/assets/img/right.svg')
+    animationImg.setAttribute('src', 'src/assets/img/right.svg')
     animationTxt.textContent = 'Correto!'
-    sound.setAttribute('src', '/src/assets/sound/correct.wav')
+    sound.setAttribute('src', 'src/assets/sound/correct.wav')
     questNumber.style.color = 'green'
     sound.play()
   }, 250)
 }
 function wrongAnswer(){
   setTimeout(() => {
-    animationImg.setAttribute('src', '/src/assets/img/wrong.svg')
+    animationImg.setAttribute('src', 'src/assets/img/wrong.svg')
     animationTxt.textContent = 'Errado!'
-    sound.setAttribute('src', '/src/assets/sound/incorrect.wav')
+    sound.setAttribute('src', 'src/assets/sound/incorrect.wav')
     questNumber.style.color = 'red'
     sound.play()
   }, 250)
