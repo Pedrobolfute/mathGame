@@ -20,6 +20,7 @@ let indice = 0
 
 let valor1
 let valor2
+let max = 5
 
 let minhaResposta
 
@@ -33,7 +34,7 @@ function descobrirResposta(valorNumerico1, valorNumerico2) {
   return valorNumerico1 + valorNumerico2
 }
 function valoresErrados(valor1, valor2) {
-  let max = valor1 + valor2
+  let max = 50
   let min = 0
   return Math.floor(Math.random() * (max - min + 1)) + min
 }
@@ -143,8 +144,8 @@ function setarValores() {
 
 
 function main() {
-  valor1 = Math.floor(Math.random() * (20 - 0 + 1)) + 0
-  valor2 = Math.floor(Math.random() * (20 - 0 + 1)) + 0
+  valor1 = Math.floor(Math.random() * (max - 0 + 1)) + 0
+  valor2 = Math.floor(Math.random() * (max - 0 + 1)) + 0
   quest = {
     pergunta: `Quanto é ${valor1} + ${valor2}?`,
     resposta: `${descobrirResposta(valor1, valor2)}`
@@ -159,6 +160,8 @@ function main() {
   radioContent[1].textContent = vetorB[indice]
   radioContent[2].textContent = vetorC[indice]
   radioContent[3].textContent = vetorD[indice]
+  max++
+  console.log(max)
 }
 main()
 
