@@ -36,7 +36,12 @@ function descobrirResposta(valorNumerico1, valorNumerico2) {
 function valoresErrados(valor1, valor2) {
   let max = 50
   let min = 0
-  return Math.floor(Math.random() * (max - min + 1)) + min
+  let random = Math.floor(Math.random() * (max - min + 1)) + min
+  if(random === quest.resposta){
+    return random += Math.floor(Math.random() * 6) + 1
+  }else{
+    return random
+  }
 }
 function embaralharVetoresABCD() {
   let abcd = ['A', 'B', 'C', 'D']
