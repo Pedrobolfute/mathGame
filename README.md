@@ -18,4 +18,6 @@ Why don't improve it, just for fun?
 
 ![mathGame](./src/assets/img/mathGame.gif)
 
+Where to play: [Play here!](https://pedrobolfute.github.io/mathGame/)
+
 **🚧 PROJECT IN DEVELOPMENT 🚧**
